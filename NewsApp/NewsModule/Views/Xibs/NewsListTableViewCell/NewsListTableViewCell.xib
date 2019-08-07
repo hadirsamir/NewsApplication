@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsListTableViewCell" rowHeight="98" id="KGk-i7-Jjw" customClass="NewsListTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGN-fw-FgJ">
+                        <rect key="frame" x="10" y="10" width="384" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlAhram" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jp-5J-PkU">
+                                <rect key="frame" x="99" y="17" width="277" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="4UY-7B-Gpm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21/4/2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9X-D6-By5">
+                                <rect key="frame" x="327" y="58" width="49" height="11.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZAY-YO-esF">
+                                <rect key="frame" x="4" y="4" width="78" height="69.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="rZz-px-TMP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22352941179999999" green="0.019607843140000001" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZAY-YO-esF" firstAttribute="leading" secondItem="hGN-fw-FgJ" secondAttribute="leading" constant="4" id="3gr-eX-oLz"/>
+                            <constraint firstItem="2Jp-5J-PkU" firstAttribute="trailing" secondItem="hGN-fw-FgJ" secondAttribute="trailingMargin" id="CwF-VF-akl"/>
+                            <constraint firstAttribute="trailing" secondItem="f9X-D6-By5" secondAttribute="trailing" constant="8" id="Gua-mD-WY2"/>
+                            <constraint firstAttribute="bottom" secondItem="ZAY-YO-esF" secondAttribute="bottom" constant="4" id="Hag-wT-Cqg"/>
+                            <constraint firstAttribute="bottom" secondItem="f9X-D6-By5" secondAttribute="bottom" constant="8" id="Orp-Su-m4S"/>
+                            <constraint firstItem="ZAY-YO-esF" firstAttribute="top" secondItem="hGN-fw-FgJ" secondAttribute="top" constant="4" id="USE-9U-kuw"/>
+                            <constraint firstItem="2Jp-5J-PkU" firstAttribute="leading" secondItem="ZAY-YO-esF" secondAttribute="trailing" constant="17" id="c5v-hB-45w"/>
+                            <constraint firstItem="f9X-D6-By5" firstAttribute="top" secondItem="2Jp-5J-PkU" secondAttribute="bottom" constant="8" symbolic="YES" id="vBB-64-0qO"/>
+                            <constraint firstItem="2Jp-5J-PkU" firstAttribute="top" secondItem="hGN-fw-FgJ" secondAttribute="top" constant="17" id="zWb-e3-rpX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hGN-fw-FgJ" secondAttribute="trailing" constant="10" id="5q9-iB-5dL"/>
+                    <constraint firstItem="hGN-fw-FgJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SAt-tc-qpE"/>
+                    <constraint firstAttribute="bottom" secondItem="hGN-fw-FgJ" secondAttribute="bottom" constant="10" id="Vq5-og-xtY"/>
+                    <constraint firstItem="hGN-fw-FgJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="g7V-Hf-nOG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.17254901959999999" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellMainView" destination="hGN-fw-FgJ" id="rq2-gD-SAw"/>
+                <outlet property="headlineLabel" destination="2Jp-5J-PkU" id="G4K-ys-6LH"/>
+                <outlet property="newsImage" destination="ZAY-YO-esF" id="uuV-e8-g7N"/>
+                <outlet property="publishDateLabel" destination="f9X-D6-By5" id="9qu-ri-PQR"/>
+            </connections>
+            <point key="canvasLocation" x="204.80000000000001" y="126.83658170914543"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsListHeaderTableViewCell" rowHeight="63" id="KGk-i7-Jjw" customClass="NewsListHeaderTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0J-eh-5Pq">
+                        <rect key="frame" x="8" y="8" width="304" height="46.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcz-2O-Kz6">
+                                <rect key="frame" x="4" y="4" width="188" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgZ-i0-hqm">
+                                <rect key="frame" x="245" y="8" width="55" height="34.5"/>
+                                <state key="normal" image="filter_sign"/>
+                                <connections>
+                                    <action selector="showPobUpAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rk1-bc-8PP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22352941179999999" green="0.019607843140000001" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AgZ-i0-hqm" secondAttribute="bottom" constant="4" id="3dV-mJ-csO"/>
+                            <constraint firstItem="AgZ-i0-hqm" firstAttribute="top" secondItem="A0J-eh-5Pq" secondAttribute="top" constant="8" id="RKz-ne-Xxg"/>
+                            <constraint firstAttribute="trailing" secondItem="AgZ-i0-hqm" secondAttribute="trailing" constant="4" id="hVw-wQ-a0a"/>
+                            <constraint firstAttribute="trailing" secondItem="fcz-2O-Kz6" secondAttribute="trailing" constant="112" id="iry-dw-3HF"/>
+                            <constraint firstItem="AgZ-i0-hqm" firstAttribute="leading" secondItem="fcz-2O-Kz6" secondAttribute="trailing" constant="53" id="jCJ-JO-dxM"/>
+                            <constraint firstAttribute="bottom" secondItem="fcz-2O-Kz6" secondAttribute="bottom" constant="4" id="t5Q-6c-Dik"/>
+                            <constraint firstItem="fcz-2O-Kz6" firstAttribute="top" secondItem="A0J-eh-5Pq" secondAttribute="top" constant="4" id="waw-OK-OaO"/>
+                            <constraint firstItem="fcz-2O-Kz6" firstAttribute="leading" secondItem="A0J-eh-5Pq" secondAttribute="leading" constant="4" id="xJq-4M-19a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.17254901959999999" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="A0J-eh-5Pq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="641-Pt-Ws1"/>
+                    <constraint firstItem="A0J-eh-5Pq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IhE-dt-w7V"/>
+                    <constraint firstAttribute="trailing" secondItem="A0J-eh-5Pq" secondAttribute="trailing" constant="8" id="Rzt-UG-aBM"/>
+                    <constraint firstAttribute="bottom" secondItem="A0J-eh-5Pq" secondAttribute="bottom" constant="8" id="pKn-ZI-bsq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="filterBtn" destination="AgZ-i0-hqm" id="SbT-tT-M7W"/>
+                <outlet property="headerLabel" destination="fcz-2O-Kz6" id="KHI-fF-58X"/>
+                <outlet property="headerMainView" destination="A0J-eh-5Pq" id="66w-Yo-CUd"/>
+            </connections>
+            <point key="canvasLocation" x="60.799999999999997" y="40.029985007496258"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="filter_sign" width="48" height="48"/>
+    </resources>
+</document>
